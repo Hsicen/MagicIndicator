@@ -8,9 +8,9 @@ import android.view.View;
 import android.view.animation.Interpolator;
 import android.view.animation.LinearInterpolator;
 
-import net.lucode.hackware.magicindicator.FragmentContainerHelper;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerIndicator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.model.PositionData;
+import com.hsicen.magicindicator.FragmentContainerHelper;
+import com.hsicen.magicindicator.abs.IPagerIndicator;
+import com.hsicen.magicindicator.model.PositionData;
 
 import java.util.List;
 

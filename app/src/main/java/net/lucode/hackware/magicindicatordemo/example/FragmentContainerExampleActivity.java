@@ -10,15 +10,16 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import net.lucode.hackware.magicindicator.FragmentContainerHelper;
-import net.lucode.hackware.magicindicator.MagicIndicator;
-import net.lucode.hackware.magicindicator.buildins.UIUtil;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.CommonNavigator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.CommonNavigatorAdapter;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerIndicator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerTitleView;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.indicators.LinePagerIndicator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.ClipPagerTitleView;
+import com.hsicen.magicindicator.FragmentContainerHelper;
+import com.hsicen.magicindicator.MagicIndicator;
+import com.hsicen.magicindicator.UIUtil;
+import com.hsicen.magicindicator.abs.CommonNavigatorAdapter;
+import com.hsicen.magicindicator.abs.IPagerIndicator;
+import com.hsicen.magicindicator.abs.IPagerTitleView;
+import com.hsicen.magicindicator.indicators.LinePagerIndicator;
+import com.hsicen.magicindicator.navigator.CommonNavigator;
+import com.hsicen.magicindicator.titles.ClipPagerTitleView;
+
 import net.lucode.hackware.magicindicatordemo.R;
 
 import java.util.ArrayList;

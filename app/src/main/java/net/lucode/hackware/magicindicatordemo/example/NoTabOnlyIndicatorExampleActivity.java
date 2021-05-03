@@ -7,16 +7,17 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
-import net.lucode.hackware.magicindicator.MagicIndicator;
-import net.lucode.hackware.magicindicator.ViewPagerHelper;
-import net.lucode.hackware.magicindicator.buildins.UIUtil;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.CommonNavigator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.CommonNavigatorAdapter;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerIndicator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerTitleView;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.indicators.LinePagerIndicator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.indicators.TriangularPagerIndicator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.DummyPagerTitleView;
+import com.hsicen.magicindicator.MagicIndicator;
+import com.hsicen.magicindicator.UIUtil;
+import com.hsicen.magicindicator.ViewPagerHelper;
+import com.hsicen.magicindicator.abs.CommonNavigatorAdapter;
+import com.hsicen.magicindicator.abs.IPagerIndicator;
+import com.hsicen.magicindicator.abs.IPagerTitleView;
+import com.hsicen.magicindicator.indicators.LinePagerIndicator;
+import com.hsicen.magicindicator.indicators.TriangularPagerIndicator;
+import com.hsicen.magicindicator.navigator.CommonNavigator;
+import com.hsicen.magicindicator.titles.DummyPagerTitleView;
+
 import net.lucode.hackware.magicindicatordemo.R;
 
 import java.util.Arrays;

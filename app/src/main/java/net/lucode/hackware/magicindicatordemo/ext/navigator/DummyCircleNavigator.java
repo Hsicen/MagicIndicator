@@ -6,8 +6,8 @@ import android.graphics.Paint;
 import android.graphics.PointF;
 import android.view.View;
 
-import net.lucode.hackware.magicindicator.abs.IPagerNavigator;
-import net.lucode.hackware.magicindicator.buildins.UIUtil;
+import com.hsicen.magicindicator.UIUtil;
+import com.hsicen.magicindicator.abs.IPagerNavigator;
 
 import java.util.ArrayList;
 import java.util.List;

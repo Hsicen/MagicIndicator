@@ -2,7 +2,7 @@ package net.lucode.hackware.magicindicatordemo.ext.titles;
 
 import android.content.Context;
 
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.SimplePagerTitleView;
+import com.hsicen.magicindicator.titles.SimplePagerTitleView;
 
 /**
  * Created by hackware on 2016/7/24.
@@ -18,18 +18,18 @@ public class ColorFlipPagerTitleView extends SimplePagerTitleView {
     @Override
     public void onLeave(int index, int totalCount, float leavePercent, boolean leftToRight) {
         if (leavePercent >= mChangePercent) {
-            setTextColor(mNormalColor);
+            setTextColor(getNormalColor());
         } else {
-            setTextColor(mSelectedColor);
+            setTextColor(getSelectedColor());
         }
     }
 
     @Override
     public void onEnter(int index, int totalCount, float enterPercent, boolean leftToRight) {
         if (enterPercent >= mChangePercent) {
-            setTextColor(mSelectedColor);
+            setTextColor(getSelectedColor());
         } else {
-            setTextColor(mNormalColor);
+            setTextColor(getNormalColor());
         }
     }
 

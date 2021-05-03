@@ -13,7 +13,7 @@
         android:layout_marginTop="@dimen/navigator_margin_top"
         android:orientation="vertical">
 
-        <net.lucode.hackware.magicindicator.MagicIndicator
+        <com.hsicen.magicindicator.MagicIndicator
             android:id="@+id/magic_indicator1"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/common_navigator_height"

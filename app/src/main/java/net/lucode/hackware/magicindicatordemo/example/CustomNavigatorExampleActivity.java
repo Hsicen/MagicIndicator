@@ -6,9 +6,10 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
-import net.lucode.hackware.magicindicator.MagicIndicator;
-import net.lucode.hackware.magicindicator.ViewPagerHelper;
-import net.lucode.hackware.magicindicator.buildins.circlenavigator.CircleNavigator;
+import com.hsicen.magicindicator.MagicIndicator;
+import com.hsicen.magicindicator.ViewPagerHelper;
+import com.hsicen.magicindicator.navigator.CircleNavigator;
+
 import net.lucode.hackware.magicindicatordemo.R;
 import net.lucode.hackware.magicindicatordemo.ext.navigator.ScaleCircleNavigator;
 

@@ -15,20 +15,21 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
-import net.lucode.hackware.magicindicator.MagicIndicator;
-import net.lucode.hackware.magicindicator.ViewPagerHelper;
-import net.lucode.hackware.magicindicator.buildins.UIUtil;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.CommonNavigator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.CommonNavigatorAdapter;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerIndicator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerTitleView;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.indicators.LinePagerIndicator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.ClipPagerTitleView;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.ColorTransitionPagerTitleView;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.SimplePagerTitleView;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.badge.BadgeAnchor;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.badge.BadgePagerTitleView;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.badge.BadgeRule;
+import com.hsicen.magicindicator.MagicIndicator;
+import com.hsicen.magicindicator.UIUtil;
+import com.hsicen.magicindicator.ViewPagerHelper;
+import com.hsicen.magicindicator.abs.CommonNavigatorAdapter;
+import com.hsicen.magicindicator.abs.IPagerIndicator;
+import com.hsicen.magicindicator.abs.IPagerTitleView;
+import com.hsicen.magicindicator.indicators.LinePagerIndicator;
+import com.hsicen.magicindicator.navigator.CommonNavigator;
+import com.hsicen.magicindicator.titles.ClipPagerTitleView;
+import com.hsicen.magicindicator.titles.ColorTransitionPagerTitleView;
+import com.hsicen.magicindicator.titles.SimplePagerTitleView;
+import com.hsicen.magicindicator.titles.badge.BadgeAnchor;
+import com.hsicen.magicindicator.titles.badge.BadgePagerTitleView;
+import com.hsicen.magicindicator.titles.badge.BadgeRule;
+
 import net.lucode.hackware.magicindicatordemo.R;
 import net.lucode.hackware.magicindicatordemo.ext.titles.ScaleTransitionPagerTitleView;
 

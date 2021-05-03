@@ -7,13 +7,13 @@
     android:orientation="vertical"
     tools:context="net.lucode.hackware.magicindicatordemo.example.NoTabOnlyIndicatorExampleActivity">
 
-    <net.lucode.hackware.magicindicator.MagicIndicator
+    <com.hsicen.magicindicator.MagicIndicator
         android:id="@+id/magic_indicator1"
         android:layout_width="match_parent"
         android:layout_height="@dimen/small_navigator_height"
         android:layout_marginTop="@dimen/navigator_margin_top" />
 
-    <net.lucode.hackware.magicindicator.MagicIndicator
+    <com.hsicen.magicindicator.MagicIndicator
         android:id="@+id/magic_indicator2"
         android:layout_width="match_parent"
         android:layout_height="@dimen/small_navigator_height"

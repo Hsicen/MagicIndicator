@@ -6,9 +6,9 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.view.View;
 
-import net.lucode.hackware.magicindicator.buildins.UIUtil;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerIndicator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.model.PositionData;
+import com.hsicen.magicindicator.UIUtil;
+import com.hsicen.magicindicator.abs.IPagerIndicator;
+import com.hsicen.magicindicator.model.PositionData;
 
 import java.util.List;
 

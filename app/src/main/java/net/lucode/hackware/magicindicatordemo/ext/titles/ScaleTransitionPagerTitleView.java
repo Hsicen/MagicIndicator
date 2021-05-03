@@ -2,7 +2,7 @@ package net.lucode.hackware.magicindicatordemo.ext.titles;
 
 import android.content.Context;
 
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.ColorTransitionPagerTitleView;
+import com.hsicen.magicindicator.titles.ColorTransitionPagerTitleView;
 
 /**
  * 带颜色渐变和缩放的指示器标题

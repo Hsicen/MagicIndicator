@@ -47,7 +47,7 @@ Simple steps, you can integrate **MagicIndicator**:
       android:orientation="vertical"
       tools:context="net.lucode.hackware.magicindicatordemo.MainActivity">
   
-      <net.lucode.hackware.magicindicator.MagicIndicator
+      <com.hsicen.magicindicator.MagicIndicator
           android:id="@+id/magic_indicator"
           android:layout_width="match_parent"
           android:layout_height="40dp" />
