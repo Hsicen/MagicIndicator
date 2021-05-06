@@ -20,9 +20,6 @@ open class SimplePagerTitleView(context: Context) :
     var selectedColor = 0
     var normalColor = 0
 
-    var onSelect: ((Int, Int) -> Unit)? = null
-    var onDeselect: ((Int, Int) -> Unit)? = null
-
     init {
         isSingleLine = true
         gravity = Gravity.CENTER
@@ -32,12 +29,10 @@ open class SimplePagerTitleView(context: Context) :
 
     override fun onSelected(index: Int, totalCount: Int) {
         setTextColor(selectedColor)
-        onSelect?.invoke(index, totalCount)
     }
 
     override fun onDeselected(index: Int, totalCount: Int) {
         setTextColor(normalColor)
-        onDeselect?.invoke(index, totalCount)
     }
 
     override fun onLeave(index: Int, totalCount: Int, leavePercent: Float, leftToRight: Boolean) {}
@@ -84,13 +79,5 @@ open class SimplePagerTitleView(context: Context) :
         val metrics = paint.fontMetrics
         val contentHeight = metrics.bottom - metrics.top
         return (height / 2 + contentHeight / 2).toInt()
-    }
-
-    fun onSelectChange(
-        onSelect: ((Int, Int) -> Unit)? = null,
-        onDeselect: ((Int, Int) -> Unit)? = null
-    ) {
-        this.onSelect = onSelect
-        this.onDeselect = onDeselect
     }
 }

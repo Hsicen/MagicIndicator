@@ -1,38 +1,40 @@
-package com.hsicen.magicindicator.titles;
+package com.hsicen.magicindicator.titles
 
-import android.content.Context;
-
-import com.hsicen.magicindicator.ArgbEvaluatorHolder;
-
+import android.content.Context
+import com.hsicen.magicindicator.ArgbEvaluatorHolder
 
 /**
  * 两种颜色过渡的指示器标题
  * 博客: http://hackware.lucode.net
  * Created by hackware on 2016/6/26.
  */
-public class ColorTransitionPagerTitleView extends SimplePagerTitleView {
+open class ColorTransitionPagerTitleView(context: Context) : SimplePagerTitleView(context) {
+    var onSelect: ((Int, Int) -> Unit)? = null
+    var onDeselect: ((Int, Int) -> Unit)? = null
 
-    public ColorTransitionPagerTitleView(Context context) {
-        super(context);
+    override fun onLeave(index: Int, totalCount: Int, leavePercent: Float, leftToRight: Boolean) {
+        val color = ArgbEvaluatorHolder.eval(leavePercent, selectedColor, normalColor)
+        setTextColor(color)
     }
 
-    @Override
-    public void onLeave(int index, int totalCount, float leavePercent, boolean leftToRight) {
-        int color = ArgbEvaluatorHolder.eval(leavePercent, getSelectedColor(), getNormalColor());
-        setTextColor(color);
+    override fun onEnter(index: Int, totalCount: Int, enterPercent: Float, leftToRight: Boolean) {
+        val color = ArgbEvaluatorHolder.eval(enterPercent, normalColor, selectedColor)
+        setTextColor(color)
     }
 
-    @Override
-    public void onEnter(int index, int totalCount, float enterPercent, boolean leftToRight) {
-        int color = ArgbEvaluatorHolder.eval(enterPercent, getNormalColor(), getSelectedColor());
-        setTextColor(color);
+    override fun onSelected(index: Int, totalCount: Int) {
+        onSelect?.invoke(index, totalCount)
     }
 
-    @Override
-    public void onSelected(int index, int totalCount) {
+    override fun onDeselected(index: Int, totalCount: Int) {
+        onDeselect?.invoke(index, totalCount)
     }
 
-    @Override
-    public void onDeselected(int index, int totalCount) {
+    fun onSelectChange(
+        onSelect: ((Int, Int) -> Unit)? = null,
+        onDeselect: ((Int, Int) -> Unit)? = null
+    ) {
+        this.onSelect = onSelect
+        this.onDeselect = onDeselect
     }
 }
