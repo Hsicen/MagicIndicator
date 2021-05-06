@@ -4,9 +4,10 @@ import android.content.Context
 import com.hsicen.magicindicator.ArgbEvaluatorHolder
 
 /**
- * 两种颜色过渡的指示器标题
- * 博客: http://hackware.lucode.net
- * Created by hackware on 2016/6/26.
+ * 作者：黄思程  5/6/21 6:02 PM
+ * 邮箱：huangsicheng@camera360.com
+ * 功能：
+ * 描述：两种颜色过渡的指示器标题
  */
 open class ColorTransitionPagerTitleView(context: Context) : SimplePagerTitleView(context) {
     var onSelect: ((Int, Int) -> Unit)? = null
