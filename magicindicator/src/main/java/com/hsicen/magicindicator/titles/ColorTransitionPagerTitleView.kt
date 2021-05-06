@@ -4,8 +4,8 @@ import android.content.Context
 import com.hsicen.magicindicator.ArgbEvaluatorHolder
 
 /**
- * 作者：黄思程  5/6/21 6:02 PM
- * 邮箱：huangsicheng@camera360.com
+ * 作者：hsicen  5/6/21 6:05 PM
+ * 邮箱：codinghuang@163.com
  * 功能：
  * 描述：两种颜色过渡的指示器标题
  */
