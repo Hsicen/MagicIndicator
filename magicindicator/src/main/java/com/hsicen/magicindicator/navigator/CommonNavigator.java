@@ -1,5 +1,6 @@
 package com.hsicen.magicindicator.navigator;
 
+import android.animation.LayoutTransition;
 import android.content.Context;
 import android.database.DataSetObserver;
 import android.view.LayoutInflater;
@@ -127,8 +128,10 @@ public class CommonNavigator extends FrameLayout implements
 
         mTitleContainer = (LinearLayout) root.findViewById(R.id.title_container);
         mTitleContainer.setPadding(mLeftPadding, 0, mRightPadding, 0);
+        mTitleContainer.getLayoutTransition().enableTransitionType(LayoutTransition.CHANGING);
 
         mIndicatorContainer = (LinearLayout) root.findViewById(R.id.indicator_container);
+        mIndicatorContainer.getLayoutTransition().enableTransitionType(LayoutTransition.CHANGING);
         if (mIndicatorOnTop) {
             mIndicatorContainer.getParent().bringChildToFront(mIndicatorContainer);
         }
